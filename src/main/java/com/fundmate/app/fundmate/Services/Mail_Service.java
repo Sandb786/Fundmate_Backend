@@ -17,6 +17,8 @@ public class Mail_Service
     // Method to send verification email
     public boolean sendVerificationEmail(User user) 
     {
+        System.out.println(user);
+        
         // Create a simple email message
         SimpleMailMessage message = new SimpleMailMessage();
 
