@@ -24,7 +24,7 @@ public class Mail_Service
 
         message.setTo(user.getEmail());
         message.setSubject("Email Verification");
-        message.setText("Please verify your email using the following link: " + "https://fundmate.up.railway.app/verifyEmail?token="+user.getVerificationToken() +
+        message.setText("Please verify your email using the following link: " + "https://fundmate-backend-03go.onrender.com/verifyEmail?token="+user.getVerificationToken() +
                         "\nThis token will expire at: " + user.getTokenExpiry());
                         
          mailSender.send(message);
